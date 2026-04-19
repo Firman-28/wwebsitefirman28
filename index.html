@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Firman Suka Damai</title>
+    <meta name="description" content="Portfolio profesional sebagai developer">
+    <meta name="author" content="Firman Suka Damai">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Modal untuk Galeri Profil -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img id="modal-img" src="" alt="" class="modal-img">
+            <h3 id="modal-title"></h3>
+            <p id="modal-desc"></p>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="logo">Firman</div>
+            <ul class="nav-links">
+                <li><a href="#slide-1">Home</a></li>
+                <li><a href="profile.html">Profil</a></li>
+            </ul>
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="slide-1" class="hero-section">
+            <div class="slide-container">
+                <div class="slide-content">
+                    <h1>Halo, Saya Firman S.D.G</h1>
+                    <p class="subtitle">Developer & Designer</p>
+                    <p class="description">Saya menciptakan solusi digital yang inovatif dan user-friendly.</p>
+                    <a href="profile.html" class="btn-primary">Lihat Profil</a>
+                </div>
+                <div class="slide-image">
+                    <img src="../imagesga/foto-profil.png" alt="Firman - Close Up" class="profile-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>Negara Indonesia</h2>
+            <div class="section-content">
+            <!-- Gambar peta yang bisa diklik -->
+            <img src="images/peta.jpg" 
+                alt="Peta Indonesia" 
+                id="negaraImage"
+                class="interactive"
+                data-title="Negara Indonesia"
+                data-img="images/peta.jpg"
+                data-desc="Indonesia adalah negara kepulauan terbesar di dunia dengan lebih dari 17.000 pulau yang tersebar dari Sabang hingga Merauke. Terletak di kawasan Asia Tenggara, Indonesia berada di antara dua benua (Asia dan Australia) serta dua samudra besar (Hindia dan Pasifik). Keberagaman budaya, bahasa, dan adat istiadat membuat Indonesia kaya akan warisan budaya dan tradisi.">
+
+            <div>
+            <p>Indonesia adalah negara kepulauan yang terletak di kawasan Asia Tenggara dan berada di antara dua benua, yaitu Asia dan Australia, serta di antara dua samudra besar, yaitu Samudra Hindia dan Samudra Pasifik.</p>
+            <p>Negara ini dikenal sebagai salah satu negara kepulauan terbesar di dunia dengan lebih dari 17.000 pulau yang tersebar dari Sabang hingga Merauke. Wilayahnya yang luas membuat Indonesia memiliki kondisi geografis yang sangat beragam.</p>
+            <p>Secara administratif, Indonesia terdiri dari puluhan provinsi yang memiliki karakteristik budaya, bahasa, dan adat istiadat yang berbeda-beda. Keberagaman ini menjadikan Indonesia sebagai negara dengan kekayaan budaya yang sangat tinggi.</p>
+        </div>
+    </div>
+    </section>
+
+<!-- Modal Negara -->
+        <div id="negaraModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title-negara"></h3>
+            <img id="modal-img-negara" src="" alt="" class="modal-img">
+            <p id="modal-desc-negara"></p>
+        </div>
+        </div>
+
+        <section id="geography" class="content-section">
+  <h2>Geografi</h2>
+  <div class="section-content">
+    <!-- Gambar yang bisa diklik -->
+    <img src="images/letakindo.jpg" 
+         alt="Letak Geografis Indonesia" 
+         id="geoImage"
+         class="interactive"
+         data-title="Letak Geografis Indonesia"
+         data-img="images/letakindo.jpg"
+         data-desc="Indonesia berada di antara dua benua, Asia dan Australia, serta di antara dua samudra besar: Samudra Hindia dan Pasifik. Letak geografis ini membuat Indonesia memiliki keanekaragaman flora, fauna, budaya, dan kondisi iklim tropis.">
+    
+    <div>
+      <ul class="list-items">
+        <li><strong>Lintang:</strong> 6°LU – 11°LS</li>
+        <li><strong>Bujur:</strong> 95°BT – 141°BT</li>
+        <li><strong>Iklim:</strong> Tropis</li>
+        <li><strong>Garis Pantai:</strong> 54.716 km</li>
+        <li><strong>Luas Wilayah:</strong> Sekitar 5.193.250 km² (Daratan: 1.919.440 km² & Lautan: 3.273.810 km²)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Geografi -->
+<div id="geografiModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3 id="modal-title-geo"></h3>
+    <img id="modal-img-geo" src="" alt="" class="modal-img">
+    <p id="modal-desc-geo"></p>
+  </div>
+</div>
+
+        <section id="culture" class="content-section">
+            <h2>Budaya</h2>
+        <div class="gallery-item" 
+            data-title="Pakaian Adat Indonesia" 
+            data-img="images/pakaianadat.jpg" 
+            data-desc="Pakaian adat Indonesia merupakan salah satu bentuk kekayaan budaya yang mencerminkan identitas, tradisi, serta nilai-nilai yang dimiliki oleh setiap daerah di Indonesia. Setiap provinsi memiliki pakaian adat yang berbeda, baik dari segi bentuk, warna, bahan, maupun makna simbolis yang terkandung di dalamnya. Pakaian adat biasanya digunakan pada acara-acara penting seperti upacara adat, pernikahan, perayaan budaya, dan kegiatan resmi lainnya. Keberagaman pakaian adat ini menunjukkan betapa kayanya budaya bangsa Indonesia, sekaligus menjadi simbol persatuan dalam keberagaman yang sejalan dengan semangat Bhinneka Tunggal Ika.">
+            <img src="images/pakaianadat.jpg" alt="Pakaian Adat" class="interactive">
+            <p class="gallery-caption">Pakaian Adat Indonesia</p>
+        </div>
+
+        <div class="gallery-item" 
+            data-title="Tarian Tradisional Indonesia" 
+            data-img="images/tarian.jpg" 
+            data-desc="Tarian adat Indonesia merupakan bagian penting dari warisan budaya yang menggambarkan nilai, tradisi, serta cerita kehidupan masyarakat di setiap daerah. Setiap daerah di Indonesia memiliki tarian khas dengan gerakan, kostum, serta iringan musik tradisional yang berbeda-beda. Tarian adat biasanya ditampilkan dalam berbagai acara seperti upacara adat, penyambutan tamu, perayaan budaya, hingga pertunjukan seni.">
+            <img src="images/tarian.jpg" alt="Tarian Tradisional" class="interactive">
+            <p class="gallery-caption">Tarian Tradisional Indonesia</p>
+        </div>
+
+        <div class="gallery-item" 
+            data-title="Rumah Adat Nusantara" 
+            data-img="images/rumah.jpg" 
+            data-desc="Rumah adat Indonesia merupakan salah satu bentuk warisan budaya yang mencerminkan karakteristik, tradisi, serta nilai-nilai yang dimiliki oleh setiap daerah di Indonesia. Setiap provinsi memiliki arsitektur rumah adat yang berbeda, baik dari segi bentuk, bahan, maupun fungsi. Rumah adat biasanya dibangun dengan material alami dan dirancang untuk memenuhi kebutuhan hidup masyarakat setempat. Keberagaman rumah adat ini menunjukkan betapa kayanya budaya bangsa Indonesia, sekaligus menjadi simbol persatuan dalam keberagaman yang sejalan dengan semangat Bhinneka Tunggal Ika.">
+        <img src="images/rumah.jpg" alt="Rumah Adat" class="interactive">
+            <p class="gallery-caption">Rumah Adat Nusantara</p>
+        </div>
+    </section>
+
+        <section id="pancasila" class="content-section">
+            <h2>Pancasila</h2>
+            <div class="pancasila-grid">
+
+        <div class="pancasila-card" 
+             data-title="Ketuhanan Yang Maha Esa" 
+             data-img="../imagesga/pancasila1.jpg" 
+             data-desc="Sila pertama Pancasila menegaskan bahwa Indonesia mengakui adanya Tuhan Yang Maha Esa sebagai sumber dari segala hukum dan nilai kehidupan berbangsa dan bernegara. Sila ini menegaskan bahwa Indonesia adalah negara yang berdasarkan pada kepercayaan kepada Tuhan, namun tetap menjunjung tinggi kebebasan beragama bagi seluruh warga negara.">
+            <img src="../imagesga/pancasila1.jpg" alt="Ketuhanan Yang Maha Esa" class="pancasila-card-logo">
+            <h3>1. Ketuhanan Yang Maha Esa</h3>
+        </div>
+
+        <div class="pancasila-card" 
+             data-title="Kemanusiaan yang Adil dan Beradab" 
+             data-img="../imagesga/pancasila2.jpg" 
+             data-desc="Sila kedua Pancasila menegaskan bahwa Indonesia menjunjung tinggi nilai-nilai kemanusiaan yang adil dan beradab. Sila ini menekankan pentingnya menghormati hak asasi manusia, menjaga keadilan sosial, serta memperlakukan sesama manusia dengan sikap yang beradab.">
+            <img src="../imagesga/pancasila2.jpg" alt="Kemanusiaan yang Adil dan Beradab" class="pancasila-card-logo">
+            <h3>2. Kemanusiaan yang Adil dan Beradab</h3>
+        </div>
+
+        <div class="pancasila-card" 
+             data-title="Persatuan Indonesia" 
+             data-img="../imagesga/pancasila3.jpg" 
+             data-desc="Sila ketiga Pancasila menegaskan pentingnya persatuan dan kesatuan bangsa Indonesia. Sila ini menekankan bahwa seluruh rakyat Indonesia harus bersatu dalam semangat Bhinneka Tunggal Ika, yang berarti berbagai perbedaan harus dihormati dan dijaga keberagamannya.">
+            <img src="../imagesga/pancasila3.jpg" alt="Persatuan Indonesia" class="pancasila-card-logo">
+            <h3>3. Persatuan Indonesia</h3>
+        </div>
+
+        <div class="pancasila-card" 
+             data-title="Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan" 
+             data-img="../imagesga/pancasila4.jpg" 
+             data-desc="Sila keempat Pancasila menegaskan bahwa Indonesia menganut sistem pemerintahan yang berdasarkan pada kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan. Sila ini menekankan pentingnya demokrasi yang berlandaskan musyawarah untuk mufakat.">
+            <img src="../imagesga/pancasila4.jpg" alt="Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan" class="pancasila-card-logo">
+            <h3>4. Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan</h3>
+        </div>
+
+        <div class="pancasila-card" 
+             data-title="Keadilan Sosial bagi Seluruh Rakyat Indonesia" 
+             data-img="../imagesga/pancasila5.jpg" 
+             data-desc="Sila kelima Pancasila menegaskan pentingnya keadilan dalam kehidupan masyarakat. Setiap warga negara memiliki hak dan kewajiban yang sama dalam berbagai bidang.">
+            <img src="../imagesga/pancasila5.jpg" alt="Keadilan Sosial bagi Seluruh Rakyat Indonesia" class="pancasila-card-logo">
+            <h3>5. Keadilan Sosial bagi Seluruh Rakyat Indonesia</h3>
+        </div>
+
+        </div>
+    </section>
+
+    <div id="pancasilaModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title-pancasila"></h3>
+            <p id="modal-desc-pancasila"></p>
+        </div>
+    </div>
+
+        <section id="contact" class="content-section">
+    <div class="contact-container">
+        <h2>Kontak</h2>
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Kirim ke WhatsApp</button>
+        </form>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>© 2026 Website Edukasi Indonesia | Firman Suka Damai</p>
+        <div class="social-links">
+            <a href="https://instagram.com/c.hriisss__" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com/@orchrisss" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
